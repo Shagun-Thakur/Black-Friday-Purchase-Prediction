@@ -37,6 +37,6 @@ To build a machine learning model that can predict how much a customer will spen
   ---
 ## App Screenshots
 Here are the screenshot of the working app predicting the purchase amount:
-![App Screenshot](Screenshot(9).png)
-![App Screenshot](Screenshot(8).png)
+![App Screenshot](Screenshot (9).png)
+![App Screenshot](Screenshot (8).png)
 
