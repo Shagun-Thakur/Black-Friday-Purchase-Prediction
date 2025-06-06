@@ -34,3 +34,9 @@ To build a machine learning model that can predict how much a customer will spen
 ## Limitations
 - XGBoost could not be implemented due to hardware constraints
 - Feature selection could be optimized further
+  ---
+## App Screenshots
+Here are the screenshot of the working app predicting the purchase amount:
+![App Screenshot](screenshot(9).png)
+![App Screenshot](screenshot(8).png)
+
