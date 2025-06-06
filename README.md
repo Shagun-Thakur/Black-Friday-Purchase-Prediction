@@ -1,7 +1,9 @@
 # Black-Friday-Purchase-Prediction
+
 This project predicts customer **purchase amounts** dusing  Black Friday Sale using a **Random Forest Regressor**. The dataset is from [Kaggle](https://www.kaggle.com/datasets/cerolacia/black-friday-sales-prediction) and has been anonymized for privacy.
 ---
 ## Problem Statement
+
 To build a machine learning model that can predict how much a customer will spend based on features like gender, age group, city category, and purchase history.
 ---
 ## Tech Stack Used
