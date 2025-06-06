@@ -1,10 +1,18 @@
+import os
+import gdown
 import streamlit as st
 import numpy as np
 import pickle 
 
+# Download the model file from Google Drive if it's not present
+MODEL_PATH = "random_forest_model.pkl"
+if not os.path.exists(MODEL_PATH):
+      file_id = "1N4HknM-wxDskClSMAy6JVSSC0E8yCNC9"
+      url = f"https://drive.google.com/uc?id={file_id}"
+      gdown.download(url, MODEL_PATH, quiet=False)
 # Load the trained model
-model = pickle.load(open('random_forest_model.pkl', 'rb'))
-
+with open(MODEL_PATH, "rb") as f:
+      model = pickle.load(f)
 #Mapping for better UI
 occupation_dict = {f"Occupation {i}": i for i in range(21)}
 
