@@ -1,7 +1,19 @@
+import os
+import gdown
 import streamlit as st
 import numpy as np
 import pickle 
 
+@st.cache_resource
+def load_model():
+      model_path = "model.pkl"
+      if not os.path.exists(model_path):
+            file_id = "1N4HknM-wxDskClSMAy6JVSSC0E8yCNC9"
+            url = f"https://drive.google.com/uc?id={file_id}"
+            gdown.download(url, model_path, quiet = False)
+      with open(model_path, "rb") as f:
+            model = pickle.load(f)
+      return model
 # Load the trained model
 model = pickle.load(open('random_forest_model.pkl', 'rb'))
 
